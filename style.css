@@ -1,5 +1,5 @@
 :root{
-    --color1: #000;
+    --color1: rgba(0,0,0,0.6);
     --color2: #fff;
 }
 .full {
