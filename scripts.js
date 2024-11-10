@@ -240,7 +240,7 @@ function printPieces(){
         console.log("Entrou no loop");
         console.log(White.pieces[piece]);
         if (!White.pieces[piece].isCaptured){
-            imgText= '<img src="'+ White.pieces[piece].file +'" alt="' + White.pieces[piece].alt + '" id="' + White.pieces[piece].id + '" class="full"/>'
+            imgText= '<img src="'+ White.pieces[piece].file +'" alt="' + White.pieces[piece].alt + '" id="' + White.pieces[piece].id + '" class=" full"draggable="true" ondragstart="drag(event)"/>'
             console.log(imgText);
             console.log(White.pieces[piece].position);
             document.getElementsByClassName(White.pieces[piece].position)[0].innerHTML =  imgText;
@@ -251,7 +251,7 @@ function printPieces(){
         console.log("Entrou no loop");
         console.log(Black.pieces[piece]);
         if (!Black.pieces[piece].isCaptured){
-            imgText= '<img src="'+ Black.pieces[piece].file +'" alt="' + White.pieces[piece].alt + '" id="' + White.pieces[piece].id + '" class="full"/>'
+            imgText= '<img src="'+ Black.pieces[piece].file +'" alt="' + Black.pieces[piece].alt + '" id="' + Black.pieces[piece].id + '" class="full" draggable="true" ondragstart="drag(event)"/>'
             console.log(imgText);
             console.log(Black.pieces[piece].position);
             document.getElementsByClassName(Black.pieces[piece].position)[0].innerHTML =  imgText;
